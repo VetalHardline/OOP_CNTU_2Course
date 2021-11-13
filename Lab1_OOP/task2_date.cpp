@@ -58,6 +58,7 @@ void Task2_Date::toString()
 void Task2_Date::calculatingDates()
 {
     int numberOfDays = 0;
+<<<<<<< HEAD
     int test = 0;
     cout << "Enter number of days: ";
     cin >> numberOfDays;
@@ -76,6 +77,18 @@ void Task2_Date::calculatingDates()
             month = 1;
             year++;
         }
+=======
+    cout << "Enter number of days: ";
+    cin >> numberOfDays;
+
+    if(day + numberOfDays > 31)
+    {
+        month += 1;
+        int newDay = 0;
+        newDay = 31 - day;
+        day = 0;
+        day += newDay;
+>>>>>>> 70dacf970df156b4da63182f2649a50773781452
         toString();
     }
     else{
@@ -86,6 +99,7 @@ void Task2_Date::calculatingDates()
 
 void Task2_Date::subtractionDays()
 {
+<<<<<<< HEAD
     int numberOfDays2 = 0;
     int test = 0;
     cout << "Enter number of days: ";
@@ -117,10 +131,19 @@ void Task2_Date::subtractionDays()
 void Task2_Date::LeapYear()
 {
     if(year % 4 == 0)
+=======
+
+}
+
+void Task2_Date::LeapYear()
+{
+    if(month == 2 && day == 29)
+>>>>>>> 70dacf970df156b4da63182f2649a50773781452
         cout << "This day is a Lap Year";
     else
         cout << "This day is`nt a Lap Year";
 }
+<<<<<<< HEAD
 
 void Task2_Date::rememberDate()
 {
@@ -134,3 +157,5 @@ void Task2_Date::comparisonOfDates()
     cout << "Date(Do): " << yearRemember << "." << monthRemember << "." << dayRemember << endl;
     cout << "Date(After): " << year << "." << month << "." << day << endl;
 }
+=======
+>>>>>>> 70dacf970df156b4da63182f2649a50773781452
